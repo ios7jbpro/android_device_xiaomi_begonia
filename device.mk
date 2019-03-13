@@ -195,6 +195,11 @@ PRODUCT_PACKAGES += \
     libsoft_attestation_cert.vendor:64 \
     libpuresoftkeymasterdevice.vendor:64
 
+# Codec2 modules
+PRODUCT_PACKAGES += \
+    com.android.media.swcodec \
+    libsfplugin_ccodec
+
 # Media
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/media/media_codecs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs.xml \
