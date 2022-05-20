@@ -16,6 +16,7 @@ PRODUCT_PROPERTY_OVERRIDES +=  \
     debug.mediatek.game_pq_enable=1 \
     debug.mtk_tflite.target_nnapi=29 \
     persist.sys.binary_xml=false \
+    sys.fflag.override.settings_enable_monitor_phantom_procs=false \
     drm.service.enabled=true \
     init.userspace_reboot.is_supported=true \
     media.stagefright.thumbnail.prefer_hw_codecs=true \
