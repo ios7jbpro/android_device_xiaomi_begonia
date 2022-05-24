@@ -16,7 +16,7 @@
 
 BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 
-DEVICE_PATH := device/redmi/begonia
+DEVICE_PATH := device/xiaomi/begonia
 
 # Architecture
 TARGET_ARCH := arm64
@@ -53,7 +53,7 @@ BOARD_RAMDISK_OFFSET     := 0x07c08000
 BOARD_DTB_OFFSET := 0x0bc08000
 BOARD_KERNEL_IMAGE_NAME := Image.gz
 BOARD_BOOTIMG_HEADER_VERSION := 2
-TARGET_KERNEL_SOURCE := kernel/xiaomi/mt6785
+TARGET_KERNEL_SOURCE := kernel/xiaomi/begonia
 TARGET_KERNEL_CONFIG := begonia_user_defconfig
 TARGET_KERNEL_CLANG_COMPILE := true
 TARGET_KERNEL_ADDITIONAL_FLAGS := AS=llvm-as AR=llvm-ar NM=llvm-nm OBJCOPY=llvm-objcopy OBJDUMP=llvm-objdump STRIP=llvm-strip
@@ -144,4 +144,4 @@ SYSTEM_EXT_PUBLIC_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/public
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
 
 # Inherit from the proprietary version
-include vendor/redmi/begonia/BoardConfigVendor.mk
+include vendor/xiaomi/begonia/BoardConfigVendor.mk
