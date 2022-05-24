@@ -16,7 +16,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 # Inherit from begonia device
 $(call inherit-product, device/xiaomi/begonia/device.mk)
 
-# Inherit some common LineageOS stuff
+# Inherit some common crdroid stuff
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Inherit some extras stuff
@@ -29,6 +29,11 @@ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 # Boot Animation
 TARGET_SCREEN_HEIGHT := 2340
 TARGET_SCREEN_WIDTH := 1080
+
+# crDroid Flags
+WITH_GMS := false
+TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_DOESNT_LIKE_FLIPENDO := true
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := begonia
